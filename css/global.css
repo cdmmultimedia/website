@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto|Roboto+Condensed');
 
 body {
+  display: block;
+
   font-family: 'Roboto', sans-serif;
 
   min-height: 100vh;
