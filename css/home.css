@@ -1,6 +1,49 @@
 body {
   display: flex;
 
+  flex-flow: column;
+
   align-items: center;
   justify-content: center;
+}
+
+nav {
+  color: #22a7f0;
+
+  display: flex;
+
+  align-items: center;
+
+  flex-flow: row;
+
+  font-family: 'Roboto Condensed', sans-serif;
+
+  height: 40px;
+
+  margin-top: 8px;
+
+  position: relative;
+}
+
+nav::before {
+  background-color: #ddd;
+
+  content: '';
+
+  height: 1px;
+  width: 100px;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+nav a {
+  color: inherit;
+
+  font-weight: bold;
+
+  text-decoration: none;
 }
