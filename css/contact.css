@@ -1,0 +1,171 @@
+h1 {
+  color: #22a7f0;
+
+  font-size: 1.6em;
+
+  margin-top: 24px;
+  padding: 8px;
+
+  position: relative;
+
+  text-transform: uppercase;
+
+  z-index: 1;
+}
+
+h1::before,
+h1::after {
+  content: '';
+
+  height: 70%;
+  width: 90%;
+
+  position: absolute;
+
+  z-index: -1;
+}
+
+h1::before {
+  border: solid 3px #22a7f0;
+
+  transform: translateX(-20px) translateY(-50%);
+}
+
+h1::after {
+  background-color: #fff;
+
+  border-radius: 10px 0 0 0;
+
+  left: 0;
+  top: 0;
+
+  transform: translateY(10%);
+}
+
+section.content {
+  display: flex;
+
+  flex: 1;
+  flex-flow: column;
+
+  align-items: center;
+  justify-content: center;
+
+  max-width: 960px;
+
+  margin: 30px auto;
+}
+
+section.content p {
+  text-align: center;
+}
+
+section.content p em {
+  color: #22a7f0;
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+.catchphrase {
+  max-width: 405px;
+}
+
+html[lang='fr'] .catchphrase {
+  max-width: 460px;
+}
+
+form {
+  display: flex;
+
+  flex-flow: column;
+
+  max-width: 480px;
+  width: 100%;
+}
+
+form label {
+  color: #bbb;
+
+  display: flex;
+
+  flex-flow: column;
+
+  padding-top: 16px;
+
+  text-transform: uppercase;
+}
+
+form label:last-of-type {
+  margin-top: 32px;
+}
+
+form label span {
+  font-size: 0.75em;
+
+  line-height: 1.8em;
+
+  transition: color ease-in-out 150ms;
+}
+
+form label input,
+form label textarea {
+  border: solid 1px #ddd;
+  border-radius: 5px;
+
+  font-size: initial;
+
+  order: 1;
+
+  outline: none;
+
+  padding: 8px;
+
+  transition: border-color ease-in-out 150ms;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #22a7f0;
+}
+
+form input:focus + span,
+form textarea:focus + span {
+  color: #22a7f0;
+}
+
+form label textarea {
+  height: 160px;
+
+  resize: none;
+}
+
+form input[type='submit'] {
+  background-color: #22a7f0;
+  color: #fff;
+
+  border: solid 2px transparent;
+  border-radius: 5px;
+
+  box-shadow: transparent 0 0 0 2px;
+
+  cursor: pointer;
+
+  align-self: center;
+
+  font-size: 1em;
+
+  margin: 24px 16px 16px;
+  padding: 8px 48px;
+
+  outline: none;
+
+  transition: ease-in-out 150ms;
+  transition-property: border-color, box-shadow;
+}
+
+form input[type='submit']:focus {
+  box-shadow: #22a7f0 0 0 0 2px;
+
+  border-color: #fff;
+}

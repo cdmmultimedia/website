@@ -1,14 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto|Roboto+Condensed');
 
 body {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
+  font-family: 'Roboto', sans-serif;
 
   min-height: 100vh;
 
   margin: 0;
+}
+
+section.wrapper {
+  display: flex;
+
+  flex-flow: column;
+
+  min-height: 100vh;
+}
+
+header {
+  background-color: #22a7f0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 64px;
 }
 
 .logo {
@@ -19,9 +35,56 @@ body {
   font-family: 'Quicksand', sans-serif;
   font-size: 1.4em;
 
+  width: 80px;
+
   padding-top: 68px;
 
   text-align: center;
+}
 
-  width: 80px;
+.logo.white {
+  background: #fff;
+
+  height: 32px;
+  width: 32px;
+
+  padding: 0 16px;
+
+  mask: url('/img/logo.svg') center center no-repeat;
+  -webkit-mask: url('/img/logo.svg') center center no-repeat;
+
+  mask-origin: content-box;
+  -webkit-mask-origin: content-box;
+}
+
+.logo.grey {
+  background: #666;
+
+  height: 32px;
+  width: 32px;
+
+  padding: 0;
+
+  mask: url('/img/logo.svg') center center no-repeat;
+  -webkit-mask: url('/img/logo.svg') center center no-repeat;
+
+  mask-origin: content-box;
+  -webkit-mask-origin: content-box;
+}
+
+footer {
+  background-color: #444;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 160px;
+}
+
+footer .copyright {
+  color: #666;
+
+  padding-right: 4px;
 }
