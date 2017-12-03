@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto|Roboto+Condensed');
 
+html {
+  height: 100%;
+}
+
 body {
   display: block;
 
   font-family: 'Roboto', sans-serif;
 
-  min-height: 100vh;
+  min-height: 100%;
 
   margin: 0;
 }
@@ -15,7 +19,7 @@ section.wrapper {
 
   flex-flow: column;
 
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 header {
